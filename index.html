@@ -4,9 +4,73 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>STARTER - Toybox Homepage</title>
+	<title>Toybox Homepage</title>
 </head>
 <body>
-    
+	<!-- SKIP LINK -->
+	<a href="#mainContent" class="skip-link">Skip to main content.</a>
+	<!-- 👆 for accessibility, every website should have a skip link on top of every website for keyboard/accessibility users -->
+
+	<!-- ANNOUNCEMENT BAR -->
+	<div class="announcements">
+		<div class="wrapper">
+			<p>Complimentary shipping on orders over $50. Discount applied at checkout.</p>
+		</div>
+	</div>
+
+	<!-- NAV SECTION -->
+	<nav class="navBar">
+		<div class="wrapper">
+			<!-- slide out menu button-->
+			<input type="checkbox" id="openSideMenu">
+			<label for="openSideMenu">
+				<img src="./assets/menu-button.svg" alt="Menu Button">
+			</label>
+
+			<!-- slide out nav content -->
+			<div class="slideOutNav">
+				<button>x</button>
+
+				<!-- menu content -->
+				<nav>
+					<ul class="mainMenu">
+						<li><a href="">Shop</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">FAQ</a></li>
+						<li><a href="">News</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- navbar -->
+				<!-- logo -->
+			<a href="#home" class="logo">
+				<h1>ToyBox</h1>
+			</a>
+
+			<!-- search/cart -->
+			<div class="searchCart">
+
+				<button class="menuIcon">
+					<img src="./assets/search.svg" alt="Search icon">
+				</button>
+				
+				<a href="#" class="bag">
+					<img src="./assets/shop-bag.svg" alt="Shopping bag">
+				</a>
+
+				<div class="counter">
+					<p>0</p>
+				</div>
+			</div>
+				
+		</div>
+	</nav>
+
+    <!-- HEADER SECTION -->
+	<header>
+		
+	</header>
 </body>
 </html>
