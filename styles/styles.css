@@ -237,7 +237,7 @@ html {
 
 @font-face {
   font-family: "Jakarta Sans";
-  src: url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff"), url("../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Regular.ttf"), url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff2");
+  src: url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff"), url("../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Regular.ttf"), url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff2");
   font-weight: normal;
 }
 /* importing Jakarta Sans font in bold */
@@ -287,6 +287,13 @@ h5 {
   font-size: 0.7rem;
 }
 
+.smallCopy {
+  font-size: 0.6rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2rem;
+}
+
 ul,
 li,
 a,
@@ -307,4 +314,100 @@ a {
 image {
   max-width: 100%;
   display: block;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 90px;
+}
+
+.button {
+  padding: 18px 36px;
+  border: 2px solid #084b6d;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.shopButton {
+  color: #084b6d;
+  background-color: transparent;
+}
+.shopButton:hover, .shopButton:focus {
+  background-color: #084b6d;
+  color: #fff;
+}
+
+.aboutButton {
+  color: #fff;
+  background-color: #084b6d;
+}
+.aboutButton:hover, .aboutButton:focus {
+  color: #084b6d;
+  background-color: transparent;
+}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  background-color: #fff;
+  color: black;
+  z-index: 10;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+.announcements {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navBar {
+  position: sticky;
+  top: 0;
+  border-top: 1px solid rgba(8, 75, 109, 0.08);
+  border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+}
+.navBar .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navBar input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+}
+
+.searchCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.searchCart .menuIcon,
+.searchCart .bag {
+  margin-right: 15px;
+}
+.searchCart .bag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slideOutNav {
+  display: none;
 }

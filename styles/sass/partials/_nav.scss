@@ -1,0 +1,59 @@
+//skip link
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    background-color: $solidWhite;
+    color: black;
+    z-index: 10;
+
+    &:focus {
+        left: 0;
+    }
+}
+
+//announcements
+.announcements {
+    text-align: center;
+    padding: 10px 0;
+}
+
+//nav bar
+.navBar {
+    position: sticky;
+    //👇 for sticky elements, you always need to stick it to something 
+    top: 0;
+    border-top: 1px solid rgba(8, 75, 109, 0.08);
+    border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    input[type=checkbox] {
+        opacity: 0;
+        // 👇 to get it off the page and have its footprint gone
+        position: absolute;
+        //📝: CANT use display:none, since it'll wipe it completely and it doesnt exist
+    }
+}
+
+.searchCart {
+    display: flex;
+    
+    .menuIcon,
+    .bag {
+        margin-right: 15px;
+    }
+
+    .bag {
+        display: flex;
+    }
+}
+
+//slide out nav
+.slideOutNav {
+    display: none;
+}
