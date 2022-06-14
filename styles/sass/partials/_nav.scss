@@ -39,12 +39,19 @@
         // 👇 to get it off the page and have its footprint gone
         position: absolute;
         //📝: CANT use display:none, since it'll wipe it completely and it doesnt exist
+
+        &:checked ~ .slideOutNav {
+            left: 0;
+        }
+    }
+
+    .menuButton {
+        cursor: pointer;
     }
 }
 
 .searchCart {
     display: flex;
-    align-items: center;
     
     .menuIcon,
     .bag {
@@ -52,9 +59,7 @@
     }
 
     .menuIcon {
-        background-color: transparent;
-        border: none;
-        padding: 0;
+        display: flex;
     }
 
     .bag {
@@ -79,4 +84,41 @@
 //slide out nav
 .slideOutNav {
     background-color: $primary;
+    position: fixed;
+    top: 0;
+    left: -506px;
+    height: 100vh;
+    //👇 accounting for mobile widths, making our own wrappers
+    //max width of 506pxs, if screen is higher than 506px then the width is 100% of the screen
+    width: 100%;
+    max-width: 506px;
+    padding: 35px 50px;
+    transition: 0.75s;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.mainMenu {
+    a {
+        font-family: $headingFont;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        // 👇 another way to write rgba..instead of all the numbers
+        color: rgba($color: $solidWhite, $alpha: 1);
+        transition: 0.3s;
+
+        &:hover,
+        &:focus {
+            color: rgba($color: $solidWhite, $alpha: 0.5);
+        }
+    }
+}
+
+.menuClose {
+    color: $solidWhite;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-end;
+
 }
