@@ -20,6 +20,7 @@
 
 //nav bar
 .navBar {
+    background-color: $solidWhite;
     position: sticky;
     //👇 for sticky elements, you always need to stick it to something 
     top: 0;
@@ -30,6 +31,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 20px 0;
     }
 
     input[type=checkbox] {
@@ -42,18 +44,39 @@
 
 .searchCart {
     display: flex;
+    align-items: center;
     
     .menuIcon,
     .bag {
         margin-right: 15px;
     }
 
+    .menuIcon {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+
     .bag {
         display: flex;
+    }
+
+    .counter {
+        display: flex;
+        align-items: center;
+
+        p {
+            width: 24px;
+            height: 24px;
+            background-color: $primary;
+            border-radius: 50%;
+            color: $solidWhite; 
+            text-align: center;
+        }
     }
 }
 
 //slide out nav
 .slideOutNav {
-    display: none;
+    background-color: $primary;
 }
