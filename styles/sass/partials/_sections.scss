@@ -51,13 +51,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 90vh;
-
+    margin-bottom: 0;
+    
     .wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
         //👇 setting a height allows us to align it vertically
-        min-height: 90vh; //👈90vh because we want it as big as the .play min-height
+        min-height: inherit; //👈90vh because we want it as big as the .play min-height, or use inherit
 
         .playContainer {
             width: 60%;
