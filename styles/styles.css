@@ -276,7 +276,11 @@ h2 {
 }
 
 h3 {
-  font-size: 2.7rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  font-family: "Jakarta Sans";
+  font-weight: bold;
 }
 
 h4 {
@@ -311,7 +315,7 @@ a {
   color: inherit;
 }
 
-image {
+img {
   max-width: 100%;
   display: block;
 }
@@ -384,6 +388,7 @@ button {
   top: 0;
   border-top: 1px solid rgba(8, 75, 109, 0.08);
   border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+  z-index: 10;
 }
 .navBar .wrapper {
   display: -webkit-box;
@@ -453,8 +458,6 @@ button {
   width: 100%;
   max-width: 506px;
   padding: 35px 50px;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,6 +466,8 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   z-index: 10;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 
 .mainMenu a {
@@ -486,4 +491,67 @@ button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+header {
+  background-color: #f8fbf3;
+}
+
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerImgContainer,
+.headerTextContainer {
+  width: 48%;
+}
+
+.categoryList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.categoryList .items {
+  border-radius: 10%;
+  margin: 50px 25px 25px;
+  width: calc(45% - 50px);
+  padding: 40px;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.categoryList .items img {
+  border-radius: 10%;
+  margin-bottom: 15px;
+}
+.categoryList .items:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.categoryList .itemOne {
+  background-color: #ffd698;
+}
+.categoryList .itemTwo {
+  background-color: #f4fcff;
+}
+.categoryList .itemThree {
+  background-color: #f8fbf3;
+}
+.categoryList .itemFour {
+  background-color: #fff5f5;
 }

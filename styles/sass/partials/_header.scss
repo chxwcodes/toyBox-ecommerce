@@ -1,0 +1,20 @@
+header {
+    background-color: $tertiary; 
+}
+
+header .wrapper {
+    display: flex;
+    width: 100%;
+    //👇overwriting the wrapper wrapping
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerImgContainer,
+.headerTextContainer {
+    width: 48%;
+}
+
+//put container over text, margin auto, center it, etc?
+

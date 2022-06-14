@@ -26,6 +26,7 @@
     top: 0;
     border-top: 1px solid rgba(8, 75, 109, 0.08);
     border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+    z-index: 10;
 
     .wrapper {
         display: flex;
@@ -93,10 +94,10 @@
     width: 100%;
     max-width: 506px;
     padding: 35px 50px;
-    transition: 0.75s;
     display: flex;
     flex-direction: column;
     z-index: 10;
+    transition: 0.75s;
 }
 
 .mainMenu {
