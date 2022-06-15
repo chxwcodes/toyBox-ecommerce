@@ -276,11 +276,7 @@ h2 {
 }
 
 h3 {
-  font-size: 0.7rem;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
-  font-family: "Jakarta Sans";
-  font-weight: bold;
+  font-size: 2.7rem;
 }
 
 h4 {
@@ -289,10 +285,8 @@ h4 {
 
 h5 {
   font-size: 0.7rem;
-  color: #fff;
   font-family: "Jakarta Sans";
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
 .smallCopy {
@@ -620,6 +614,9 @@ footer .footerFlexContainer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.footerNav h5 {
+  color: #fff;
 }
 
 .social {
