@@ -671,6 +671,7 @@ footer .footerFlexContainer {
   }
 
   .categoryList .items {
+    width: 100%;
     padding: 15px;
     margin: 20px 15px;
   }
@@ -682,7 +683,6 @@ footer .footerFlexContainer {
 }
 @media (max-width: 500px) {
   .categoryList .items {
-    width: 100%;
     margin: 10px;
   }
 
