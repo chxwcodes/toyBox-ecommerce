@@ -1,0 +1,76 @@
+.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 90px auto;
+    max-width: 1000px;
+}
+
+//stripping default input stylings
+input,
+textarea {
+    border: none;
+    font-family: $bodyFont;
+    color: #333;
+    //👇 breathing room between text and the input area
+    padding: 0 0 10px 5px;
+    margin-bottom: 40px;
+
+    &::placeholder {
+        font-size: 0.8rem;
+        color: $primary;
+        opacity: 1; //👈by default, placeholder text are slightly transparent. remove w opacity
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+
+    &:focus {
+        border-bottom: 1px solid $primary;
+        outline: none; //👈removes window's default outline when you tab
+    }
+}
+
+input {
+    border-bottom: 1px solid #eee;
+}
+
+textarea {
+    border: 1px solid #eee;
+}
+
+//select options style stripping and reconstruction
+
+select {
+    appearance: none; //👈remove as many browser default styling as possible
+    border: none;
+    font-family: $bodyFont;
+    color: $primary;
+    background-color: $solidWhite;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #eee;
+    //👇 adding a down triangle
+    background-image: url(../assets/caret-down-solid.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%; //👈 0% is left
+}
+
+option {
+    font-family: $bodyFont;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    
+    label {
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+
+    input {
+        accent-color: $primary;
+    }
+}
